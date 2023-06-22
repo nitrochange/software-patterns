@@ -1,12 +1,12 @@
 # software-patterns
 ### Important design principles
-O - Open for extension, closed for modification
+1. Encapsulate everything what you can
+2. Composition more preferred then inheritance
+3. Program on interface level
+4. Low coupling between communicating objects more preferable
+5. Classes should be open for extension, closed for modification
+6. Code should be dependent on abstractions not concrete classes
 
-Other:
-composition better than inheritance
-low coupling is better
-encapsulate everything you can
-program on interface level
 ## Observer
 observer pattern - this is a behavioral design pattern that creates a subscription mechanism that allows one object to monitor and respond to events occurring in other objects.
 1. Publisher opens his business and starts to publish some events
@@ -30,7 +30,9 @@ place allowing other code use only factory methods.
 ## Command
 command pattern - Encapsulates command request in object to make it possible parametrize client object. Making possibility 
 to organize the queue or request registration or cancellation of the requests. Decouples entities that needs to execute commands from entities that actually performing this commands.
+Commands can be used in transactions
 Command loading:
 1. Client creates command object
 2. Client calls setCommand() to save command object in the initiator
 3. Later client call initiator to execute the command
+4. Macrocommands can contain several commands
