@@ -43,3 +43,5 @@ adapter pattern - changes interface from one class to another to make it possibl
 facade pattern - provides unique high-level interface to subsystem that encapsulate several interfaces.
 Example: we have a cinema and to start/stop watching film we need to perform some actions like turn on/off the screen, 
 choose disk, insert dvd, prepare food and so on. Facade will be 1 class with methods `startSession` and `endSession`
+## Template Method
+template method - makes initial algorithm skeleton in method. Subclasses are implementing the actual behaviour.
